@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goals",
+  "info": {
+    "singularName": "goal",
+    "pluralName": "goals",
+    "displayName": "Goal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "completed",
+        "pending"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "vacation",
+        "money",
+        "exercise",
+        "smoke",
+        "language"
+      ]
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
